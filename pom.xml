@@ -8,12 +8,17 @@
 	<name>mavewebappdemo Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<distributionManagement>
-		<snapshotRepository>
-    		  <id>nexus-snapshots</id>
-    		  <url>http://54.159.177.72:8081/nexus/content/maven-snapshots/snapshots</url>
-   		</snapshotRepository>
-	</distributionManagement>
-	<dependencies>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-14-209.ap-south-1.compute.internal-releases</name>
+        <url>http://65.0.105.222:8081/artifactory/Maven_repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-14-209.ap-south-1.compute.internal-snapshots</name>
+        <url>http://65.0.105.222:8081/artifactory/Maven_repo</url>
+    </snapshotRepository>
+</distributionManagement>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
    		 <groupId>mysql</groupId>
