@@ -18,14 +18,12 @@
 	</dependencies>
 	<distributionManagement>
     <repository>
-        <id>central</id>
-        <name>ip-172-31-14-209.ap-south-1.compute.internal-releases</name>
-        <url>http://65.0.105.222:8081/artifactory/Maven_repo</url>
+        <id>maven_releases</id>
+        <url>http://65.0.61.182:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
-        <id>snapshots</id>
-        <name>ip-172-31-14-209.ap-south-1.compute.internal-snapshots</name>
-        <url>http://65.0.105.222:8081/artifactory/Maven_repo</url>
+        <id>maven_snapshots</id>
+        <url>http://65.0.61.182:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 	
